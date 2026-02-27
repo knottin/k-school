@@ -12,6 +12,7 @@ const EnquireForm = () => {
       toddler: false,
       preschool: false,
       kindergarten: false,
+      osc: false,
     },
     message: "",
     website: "",
@@ -254,6 +255,16 @@ const EnquireForm = () => {
                       className="mr-2"
                     />
                     Kindergarten
+                  </label>
+                  <label className="flex items-center">
+                    <input
+                      type="checkbox"
+                      name="osc"
+                      checked={formData.programs.osc}
+                      onChange={handleCheckboxChange}
+                      className="mr-2"
+                    />
+                    OSC (Out Of School Care)
                   </label>
                 </div>
               </div>
